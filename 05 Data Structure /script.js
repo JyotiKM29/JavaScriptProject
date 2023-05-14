@@ -345,6 +345,12 @@ document.querySelector('button').addEventListener('click' ,
   const row = text.split('\n');
   for(const [i ,text] of row.entries()){
 
+    // const [first , second] = text.toLowerCase().trim().split('_');
+
+    // const outPut = `${first} ${second.replace(second[0],second[0].toUpperCase())}`;
+
+    // console.log(`${outPut.padEnd(20)}${'✅'.repeat(i + 1)}`);
+
     //step 1
     const newText = text.toLowerCase();
     const trimText = newText.trim();
@@ -361,7 +367,7 @@ document.querySelector('button').addEventListener('click' ,
     const addPadding = findUnderScore.padEnd(20, ' ');
     // console.log(addPadding);
 
-    //4
+    4
     const ans = addPadding + '✅'.repeat(i +1);
     console.log(ans);
     
